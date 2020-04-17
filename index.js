@@ -248,19 +248,28 @@ function removeArtist(array, index) {
 
 /* Task 5: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born the 20th century (1800-1900) */
 
-function get20s(/* Code here */){
+function get20s(data){
+   let array20s = [];
 
-    /* Code here */
-
+    for(i = 0; i < data.length, i++)//UNSURE HOW TO DO THIS SINCE THE BIRTHDAY IS BURRIED IN THE BIO, AND BECAUSE YEARS IS A RANGE
+      if(birthYear <= 1800 && >= 1900 ){
+        arrays20.push(name);
+      }
+    return array20s;
   }
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(lotOfPaint){
+  let artistsArray = [];
+  for (i = 0; i < data.length, i++){
+    if(paintings > 100){
+      artistsArray.push(name);
+    }
   }
+
+  return artistsArray;
+}
 
 
 /* Task 7: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -272,18 +281,23 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
+function addArtist(){//UNSURE WHAT IS BEING ASKED
+  artists.push(new)
+    
 
   }
 
 
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
 
-function checkArtist(/* Code here */){
+function checkArtist(){
+  for (i = 0; i < artists.length, i++){
+    if(name ==== this.name ){
+      return true;
+    }
+  }
 
-    /* Code here */
+    
 
   }
 
