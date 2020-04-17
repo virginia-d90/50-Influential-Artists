@@ -1,5 +1,66 @@
+
+body{
+    margin: 20px;
+}  //closes body 
 .title-container{
-    background-image: .heroImage;
+    height: 50vh;
+    background-image: url("../assets/home.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: 30px;
+        color: white;
+    }//closes h1
     
-}
+    button{
+        padding: 1%;
+        border-radius: 5px;
+    }//closes button
+}//closes title container
+
+
+
+
+.artists-container{
+    display: flex;
+    justify-content: space-evenly;
+    
+    img{
+
+        width: 250px;
+        height: 150px;
+        padding: 40px 0px;
+    }//closes img
+    .artist{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+
+        a{
+            text-decoration: none;
+            color: black;
+            line-height: 2rem;
+            padding: 2%;
+            font-size: 1.5rem;
+        }
+        
+        .bio{
+            line-height: 1rem;
+            margin: 2px;
+            text-align: center;
+        }
+    }//closes artist
+
+   
+}//closes artist container  
+
+    
+
+    
 

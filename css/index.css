@@ -93,3 +93,58 @@ nav {
   align-items: center;
   padding: 2%;
 }
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 0.5%;
+  border-right: 1px solid black;
+  line-height: 1.5rem;
+}
+body {
+  margin: 20px;
+}
+.title-container {
+  height: 50vh;
+  background-image: url("../assets/home.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title-container h1 {
+  font-size: 30px;
+  color: white;
+}
+.title-container button {
+  padding: 1%;
+  border-radius: 5px;
+}
+.artists-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.artists-container img {
+  width: 250px;
+  height: 150px;
+  padding: 40px 0px;
+}
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+}
+.artists-container .artist a {
+  text-decoration: none;
+  color: black;
+  line-height: 2rem;
+  padding: 2%;
+  font-size: 1.5rem;
+}
+.artists-container .artist .bio {
+  line-height: 1rem;
+  margin: 2px;
+  text-align: center;
+}

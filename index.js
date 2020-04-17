@@ -208,12 +208,17 @@ const artists = [
 (1) Name of the first artist in the array
 (2) Bio of the third artist in the array */
 console.log(artists[0].name);
-console.log(artist[2].bio);
+console.log(artists[2].bio);
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-console.log(artists[8].name = 'Vincint Van Gogh');
+//console.log(artists[8].name = 'Vincint Van Gogh');
+
+console.log(artists[8])
+
+artists.slice(8,9)[0].name = 'Vincent Van Gogh'//WHY THE 9? SORRY THIS DOESNT MAKE SENSE. ALSO SPLICE OR SLICE
+console.log(artists[8])
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
@@ -225,8 +230,8 @@ console.log(artists[8].name = 'Vincint Van Gogh');
 */
 function getArtistByIndex(id, name) {
   
-    return `The artist at index ${id} is ${name}`;
-  }
+  return `The artist at index ${id} is ${name}`;
+}
   
   /**
 
@@ -240,8 +245,8 @@ function getArtistByIndex(id, name) {
  * it will remove Amedeo Modigliani from our dataset.
 */
 function removeArtist(array, index) {
-    array.splice([index],1);
-  }
+  array.splice([index],1);
+}
   
   /**
 
@@ -251,18 +256,19 @@ function removeArtist(array, index) {
 function get20s(data){
    let array20s = [];
 
-    for(i = 0; i < data.length, i++)//UNSURE HOW TO DO THIS SINCE THE BIRTHDAY IS BURRIED IN THE BIO, AND BECAUSE YEARS IS A RANGE
-      if(birthYear <= 1800 && >= 1900 ){
+    for(i = 0; i < data.length; i++){//UNSURE HOW TO DO THIS SINCE THE BIRTHDAY IS BURRIED IN THE BIO, AND BECAUSE YEARS IS A RANGE
+      if(birthYear <= 1800 && birthYear >= 1900 ){
         arrays20.push(name);
       }
+    }
     return array20s;
-  }
+}
 
 /* Task 6: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
 function lotsOfArt(lotOfPaint){
   let artistsArray = [];
-  for (i = 0; i < data.length, i++){
+  for (i = 0; i < data.length; i++){
     if(paintings > 100){
       artistsArray.push(name);
     }
@@ -281,27 +287,31 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(){//UNSURE WHAT IS BEING ASKED
-  artists.push(new)
-    
+function addArtist(newArtist){
+  artists.push(newArtist)
+}
+
+addArtist({
+
+  id:21,
+  name: 'Virginia Davenport',
+  years: '1990 - 2020',
+  genre: 'Web Design',
+  nationality: 'American',
+  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 
   }
-
-
+);
 /* Task 8: Create a function called `checkArtist` that accepts a string (name of an artist) and checks if that artist is in the dataset. */
-
-function checkArtist(){
-  for (i = 0; i < artists.length, i++){
-    if(name ==== this.name ){
+function checkArtist(artists, checkName){
+  for (i = 0; i < artists.length; i++){
+    if(artists[i].name === checkName){
       return true;
     }
   }
+}
 
-    
-
-  }
-
-
+console.log(checkArtist(artists, "Virginia Davenport"));
 
 
 
