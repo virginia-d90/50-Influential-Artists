@@ -13,7 +13,10 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     .flexIt(column, center, center);
-
+    
+    @media @mobile {
+        height: 30vh;
+    }
     h1{
         font-size: 30px;
         color: white;
@@ -33,6 +36,10 @@ body{
 
 .artists-container{
     .flexIt(row, space-evenly, flex-start);
+
+    @media @mobile{
+        .flexIt(column, space-evenly, center);
+    }
     
     img{
         width: 250px;
@@ -49,7 +56,12 @@ body{
         flex-direction: column;
         align-items: center;
         width: 45%;
-
+        
+        @media @mobile{
+            width: 80%;
+            line-height: 1.2rem;
+        }
+        
         a{
             text-decoration: none;
             color: black;
