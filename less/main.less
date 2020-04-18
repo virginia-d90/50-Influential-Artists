@@ -1,25 +1,30 @@
 
 body{
     margin: 20px;
+    .main-font;
+    .main-background;
 }  //closes body 
+
+
 .title-container{
     height: 50vh;
+    //width: 90%;
     background-image: url("../assets/home.png");
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    .flexIt(column, center, center);
 
     h1{
         font-size: 30px;
         color: white;
+        width: 30%;
+        text-align: center;
+        margin: 5px;
     }//closes h1
     
     button{
-        padding: 1%;
-        border-radius: 5px;
+       .custom-bttn(black, 1% 2%, 3px); 
+        
     }//closes button
 }//closes title container
 
@@ -27,16 +32,19 @@ body{
 
 
 .artists-container{
-    display: flex;
-    justify-content: space-evenly;
+    .flexIt(row, space-evenly, flex-start);
     
     img{
-
         width: 250px;
         height: 150px;
         padding: 40px 0px;
     }//closes img
+
+    img:hover{
+        opacity: 0.8;
+    }
     .artist{
+        
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -51,7 +59,7 @@ body{
         }
         
         .bio{
-            line-height: 1rem;
+            line-height: 1.2rem;
             margin: 2px;
             text-align: center;
         }
