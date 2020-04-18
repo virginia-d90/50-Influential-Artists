@@ -247,7 +247,7 @@ function getArtistByIndex(id, name) {
 function removeArtist(array, index) {
   array.splice([index],1);
 }
-  
+  //console.log(removeArtist(artists, 0));
   /**
 
 
